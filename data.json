@@ -1,0 +1,13 @@
+{
+  "name": "The ultimate docker course",
+  "price": 149,
+  "is_published": true,
+  "tags": [
+    "software",
+    "devops"
+  ],
+  "author": {
+    "first_name": "Ady",
+    "last_name": "Rahmansyah"
+  }
+}

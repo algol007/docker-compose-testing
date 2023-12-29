@@ -1,0 +1,23 @@
+version: "3.8"
+services:
+  frontend:
+    build: ./frontend
+    # platform: linux/amd64
+    ports:
+      - 5173:5173
+  backend:
+    build: ./backend
+    platform: linux/amd64
+    ports:
+      - 3001:3001
+    depends_on:
+      - database
+  database:
+    image: mongo:4.0-xenial
+    ports:
+      - 27017:27017
+    volumes:
+      - algol007:/data/db
+
+volumes:
+  algol007:
